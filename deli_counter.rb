@@ -1,8 +1,14 @@
+<<<<<<< HEAD
+=======
+require 'pry'
+
+>>>>>>> ebe2432e57a49d626c690e164d6a3a91190967d5
 katz_deli = []
 
 def line(array)
   people_in_line = []
   array.each_with_index do |person, place| 
+<<<<<<< HEAD
     people_in_line.push("#{place + 1}. #{person}")
   end
   if array.length == 0
@@ -31,3 +37,15 @@ def now_serving(array)
   end
 end
   
+=======
+    people_in_line.push("#{place}. #{person}")
+  end
+  binding.pry
+  if array.length == 0
+    puts "The line is currently empty."
+  else
+    puts "The line is currently: #{array.join(" ")}"
+    puts people_in_line
+  end
+end
+>>>>>>> ebe2432e57a49d626c690e164d6a3a91190967d5
